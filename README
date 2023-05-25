@@ -1,0 +1,11 @@
+Project ini merupakan sebuah sistem tracking untuk perusahaan ekspedisi 
+Mekanismenya menggunakan admin untuk update barang, dan semuanya masih dilakukan di dalam sistem ini 
+Tools yang dipakai adalah Codeigniter 3, AdminLTE
+Untuk Databasenya menggunakan MySQL
+Beberapa fitur yang ada didalam program ini adalah
+
+-Tambah barang
+-Konfirmasi barang diterima
+-Konfirmasi barang dijalan
+-Konfirmasi barang sampai kota tujuan
+-Konfirmasi barang telah sampai di pelanggan
