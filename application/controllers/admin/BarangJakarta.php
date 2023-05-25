@@ -63,13 +63,10 @@ class BarangJakarta extends CI_Controller
 	public function inputResi()
 	{
 		$row = $this->db->select("*")->limit(1)->order_by('id_barang', "DESC")->get("tbl_barang")->row();
-		// $formatingDate =  date('dmYHis');
 		$formatingDate =  date('YmdHis');
 		$resultResi =    $formatingDate . $row->id_barang;
 		$data = $resultResi;
 
-
-		// $this->M_tlj->inputData($data, 'tbl_barang');
 		$this->M_tlj->inputResi($data);
 		$this->session->set_flashdata('flash', 'ditambahkan');
 

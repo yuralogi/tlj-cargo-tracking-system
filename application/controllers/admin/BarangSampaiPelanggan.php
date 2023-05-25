@@ -11,11 +11,8 @@ class BarangSampaiPelanggan extends CI_Controller
 
     public function index()
     {
-        // $this->data['page_title'] = 'Dashboard';
         $data['page_title'] = 'Data Barang Sampai Di Pelanggan ';
-
         $this->load->model('m_tlj');
-
         $data['db_tljcargo'] = $this->m_tlj->getData();
         $this->load->view('backend/businesslogic/v_barang_sampai', $data);
     }

@@ -11,7 +11,6 @@ class BarangLampung extends CI_Controller
 
 	public function index()
 	{
-		// $this->data['page_title'] = 'Dashboard';
 		$data['page_title'] = 'Data Barang Lampung';
 		$this->load->model('m_tlj');
 

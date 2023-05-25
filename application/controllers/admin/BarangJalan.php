@@ -10,7 +10,6 @@ class BarangJalan extends CI_Controller
 	}
 	public function index()
 	{
-		// $this->data['page_title'] = 'Dashboard';
 		$data['page_title'] = 'Data Barang Di Perjalanan';
 		$this->load->model('m_tlj');
 		$data['db_tljcargo'] = $this->m_tlj->getData();

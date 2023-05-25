@@ -11,11 +11,6 @@ class BarangDetails extends CI_Controller
 
     public function detail($no_resi)
     {
-        // $data['page_title'] = 'Detail Data Barang';
-        // $this->load->model('m_tlj');
-
-        // $this->load->view('backend/businesslogic/v_barang_details', $data);
-
         $this->load->model('m_tlj');
         $data['page_title'] = 'Detail Data Barang';
         $detail = $this->m_tlj->detailBarang($no_resi);
@@ -23,8 +18,4 @@ class BarangDetails extends CI_Controller
 
         $this->load->view('backend/businesslogic/v_barang_details', $data);
     }
-
-    // public function detail($id_barang)
-    // {
-    // }
 }
